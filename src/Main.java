@@ -33,6 +33,8 @@ public class Main {
 
                 if(ID.equals(validID) && password.equals(validPassword)) {
                     System.out.println("You have successfully logged in");
+                    System.out.println("Press Enter to continue ");
+
                     loggedIn = true;
 
 
@@ -41,7 +43,6 @@ public class Main {
                     System.out.println("Enter correct id password");
                 }
             }
-            System.out.println("Press quit to exit else press any key and enter");
             close = in.nextLine();
             while(!close.equals("quit")) {
                 ArrayList<Double> itemPrices = new ArrayList<>();
